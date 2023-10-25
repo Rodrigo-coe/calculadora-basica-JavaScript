@@ -1,0 +1,49 @@
+function soma(){ // função sem parâmetros
+
+    let num1 = Number(prompt("Digite o primeiro numero a ser somado:"))
+    let num2 = Number(prompt("Digite o segundo numero a ser somado:"))
+
+    return(`A soma dos número informados é: ${num1 + num2}`)
+}
+
+function subtrair(){
+    let num1 = Number(prompt("Digite o primeiro numero:"))
+    let num2 = Number(prompt("Digite a quantidade a ser subtraida:"))
+
+    return(`A subtração dos número informados é: ${num1 - num2}`)
+}
+
+function multiplicação(){
+    let num1 = Number(prompt("Digite o primeiro numero:"))
+    let num2 = Number(prompt("Digite o segundo numero:"))
+
+    return(`A multiplicação dos número informados é: ${num1 * num2}`)
+}
+
+function divisão(){
+    let num1 = Number(prompt("Digite o numero a ser dividido:"))
+    let num2 = Number(prompt("Digite o numero dividendo:"))
+
+    return(`A divisão dos número informados é: ${num1 / num2}`)
+}
+let função = Number(prompt("escolha sua operação: 1-somar 2-subtrair 3-multiplicar 4-dividir"))
+function calculadora(função){
+    
+    
+    while(isNaN(função)){
+        função = Number(prompt("escolha sua operação: 1-somar 2-subtrair 3-multiplicar 4-dividir"))
+    }
+    if (função == 1){
+        console.log(soma())
+    }
+    else if (função == 2){
+        console.log(subtrair())
+    }
+    else if (função == 3){
+        console.log(multiplicação())
+    }
+    else if (função == 4){
+        console.log(divisão())
+    }   
+}
+calculadora(função)
